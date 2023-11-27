@@ -7,7 +7,7 @@ library LibWillOverflow {
     /// Returns true if `a * b` will overflow.
     function mulWillOverflow(uint256 a, uint256 b) internal pure returns (bool) {
         unchecked {
-            if (a == 0) { return false; }
+            if (a == 0) return false;
             uint256 c = a * b;
             return c / a != b;
         }
@@ -17,6 +17,13 @@ library LibWillOverflow {
     function addWillOverflow(uint256 a, uint256 b) internal pure returns (bool) {
         unchecked {
             return a + b < a;
+        }
+    }
+
+    /// Returns true if `a - b` will overflow.
+    function subWillOverflow(uint256 a, uint256 b) internal pure returns (bool) {
+        unchecked {
+            return a < b;
         }
     }
 }
