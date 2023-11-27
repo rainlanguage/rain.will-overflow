@@ -1,0 +1,6 @@
+LibWillOverflowAddTest:testWillOverflowAdd(uint256,uint256) (runs: 2048, μ: 325, ~: 325)
+LibWillOverflowAddTest:testWillOverflowAddFalse(uint256,uint256) (runs: 2048, μ: 3283, ~: 3283)
+LibWillOverflowAddTest:testWillOverflowAddTrue(uint256,uint256) (runs: 2048, μ: 4756, ~: 4756)
+LibWillOverflowMulTest:testWillOverflowMul(uint256,uint256) (runs: 2048, μ: 411, ~: 413)
+LibWillOverflowMulTest:testWillOverflowMulFalse(uint256,uint256) (runs: 2048, μ: 3340, ~: 3343)
+LibWillOverflowMulTest:testWillOverflowMulTrue(uint256,uint256) (runs: 2048, μ: 4837, ~: 4837)
